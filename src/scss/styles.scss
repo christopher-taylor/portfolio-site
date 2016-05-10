@@ -1,0 +1,58 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* fontawesome */
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+$headerFontSize: 24px;
+body{
+    background-color: black;
+    margin:0;
+}
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    border-bottom: 3px solid white;
+}
+#name {
+    width: 25%;
+    text-align: center;
+    background-color: black;
+    font-size: $headerFontSize;
+    display: inline-block;
+    color: white;
+}
+
+#trapezoid {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $headerFontSize + 3 0 0 $headerFontSize + 3;
+    border-color: transparent transparent transparent black;
+}
+
+
+nav {
+    display: inline-block;
+    width:auto;
+    float:right;
+    background-color: white;
+    color: black;
+}
+ul{
+    top: 50%;
+    margin: 0px;
+    font-size: $headerFontSize;
+}
+li {
+    margin: 10px 10px 10px 10px;
+    display: inline;
+    white-space: nowrap;
+}
