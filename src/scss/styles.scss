@@ -3,56 +3,68 @@
 [class*="fontawesome-"]:before {
     font-family: 'FontAwesome', sans-serif;
 }
-
+@font-face {
+    font-family: operator;
+    src: url('/fonts/OperatorMono-Light.otf');
+}
 $headerFontSize: 24px;
-body{
+
+body {
     background-color: black;
-    margin:0;
+    margin: 0;
 }
+
 header {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: white;
-    position: relative;
-    border-bottom: 3px solid white;
-}
-#name {
-    width: 25%;
+    background-color: #161616;
+    color: white;
+    font-family: 'Scheherazade', serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
     text-align: center;
-    background-color: black;
-    font-size: $headerFontSize;
+    width: 100%;
+}
+
+#name {
+    font-weight: bold;
+    font-size: 50px;
+    padding: 8px 0;
+}
+
+.social {
     display: inline-block;
+    float: right;
+    width: auto;
+}
+
+.nav-item {
+    display: inline-block;
+    font-size: 16px;
+    height: 45px;
+    padding: 14.5px 0 0 0;
+    width: 15%;
+}
+
+nav {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.7);
+    transition: color.25s linear;
+}
+
+nav:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+main{
     color: white;
 }
 
-#trapezoid {
-    position: absolute;
-    bottom: 0;
+.portfolio-item-image{
+    background: url('/img/neighborhood-map.png') center/cover no-repeat;
     display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: $headerFontSize + 3 0 0 $headerFontSize + 3;
-    border-color: transparent transparent transparent black;
+    height: calc(100vh - 165px);
+    opacity: .4;
+    width: 50%;
 }
-
-
-nav {
+.portfolio-item-desc{
     display: inline-block;
-    width:auto;
-    float:right;
-    background-color: white;
-    color: black;
-}
-ul{
-    top: 50%;
-    margin: 0px;
-    font-size: $headerFontSize;
-}
-li {
-    margin: 10px 10px 10px 10px;
-    display: inline;
-    white-space: nowrap;
 }

@@ -3,50 +3,58 @@
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif; }
 
+@font-face {
+  font-family: operator;
+  src: url("/fonts/OperatorMono-Light.otf"); }
+
 body {
   background-color: black;
   margin: 0; }
 
 header {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  background-color: white;
-  position: relative;
-  border-bottom: 3px solid white; }
+  background-color: #161616;
+  color: white;
+  font-family: 'Scheherazade', serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%; }
 
 #name {
-  width: 25%;
-  text-align: center;
-  background-color: black;
-  font-size: 24px;
-  display: inline-block;
-  color: white; }
+  font-weight: bold;
+  font-size: 50px;
+  padding: 8px 0; }
 
-#trapezoid {
-  position: absolute;
-  bottom: 0;
+.social {
   display: inline-block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 27px 0 0 27px;
-  border-color: transparent transparent transparent black; }
+  float: right;
+  width: auto; }
+
+.nav-item {
+  display: inline-block;
+  font-size: 16px;
+  height: 45px;
+  padding: 14.5px 0 0 0;
+  width: 15%; }
 
 nav {
-  display: inline-block;
-  width: auto;
-  float: right;
   background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: color 0.25s linear;
+  transition: color 0.25s linear; }
+
+nav:hover {
   color: black; }
 
-ul {
-  top: 50%;
-  margin: 0px;
-  font-size: 24px; }
+main {
+  color: white; }
 
-li {
-  margin: 10px 10px 10px 10px;
-  display: inline;
-  white-space: nowrap; }
+.portfolio-item-image {
+  background: url("/img/neighborhood-map.png") center/cover no-repeat;
+  display: inline-block;
+  height: calc(100vh - 165px);
+  opacity: .4;
+  width: 50%; }
+
+.portfolio-item-desc {
+  display: inline-block; }
